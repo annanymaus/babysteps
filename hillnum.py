@@ -7,7 +7,7 @@ num = input("Enter a number : ")
 def hillnum(num):
     hill = [ ]
     #defining range where [i-1] and [i+1] fall between 0 and len(num)-1
-    for i in range(1,len(num)-2):
+    for i in range(1,len(num)-1):
         if num[i]>num[i-1] and num[i]>num[i+1]:
             hill.append(num[i])
     return hill
@@ -17,5 +17,11 @@ def hillnum(num):
 if len(num)<3:
     print ("number length too short")
 
-print (hillnum(num))
+c = hillnum(num)
+
+#print hill numbers
+print (c) 
+
+#print no. of hill numbers
+print (len(c))
 
