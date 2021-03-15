@@ -10,7 +10,7 @@ sum = 0
 
 for i in range(len(n)):
     #convert each list element to int
-    n[i] = int(n[i])
+    n[i] = float(n[i])
     #calculate sum
     sum = sum + n[i]
 
